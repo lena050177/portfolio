@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-left h1 {
+  margin: 0;
+  color: #0a66c2;
+}
+
+.subtitle {
+  margin: 4px 0 0 0;
+  color: #666;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+
+/* ES BUTTON */
+
+.lang-btn {
+  background: #0a66c2;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:  0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #084c97;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+
+/* MAIN CONTENT */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #0a66c2;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #d6dae0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+/* WHATSAPP BUTTON */
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.whatsapp img {
+  width: 28px;
+}
+/* PROJECT CARD */
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-top: 15px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #0a66c2;
+}
+
+.project-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #0a66c2;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:  backgroung 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background: #084c97;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0a66c2;
+  border: 2px solid #0a66c2;
+}
+
+.btn-outline:hover {
+  background: #0a66c2;
+  color: #fff;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  margin-top: 50px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.contact-buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+

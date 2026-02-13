@@ -4,188 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elena Yudina | Desarrolladora Web Junior</title>
-
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #f5f7fa;
-    color: #1f2933;
-    line-height: 1.7;
-  }
-
-  * {
-    font-family: inherit;
-    box-sizing: border-box;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    background: white;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .header-left {
-    min-width: 250px;
-  }
-
-  .header-right {
-    text-align: right;
-    font-size: 14px;
-    min-width: 220px;
-  }
-
-  h1, h2, h3 {
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    color: #0a66c2;
-  }
-
-  .subtitle {
-    color: #6b7280;
-    margin-bottom: 20px;
-  }
-
-  .lang {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 6px;
-    background: #eef3f9;
-    color: #0a66c2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    transition: all 0.2s ease;
-    margin-bottom: 8px;
-  }
-
-  .lang:hover {
-    background: #0a66c2;
-    color: white;
-  }
-
-  .section {
-    margin-top: 40px;
-  }
-
-  .skills span {
-    display: inline-block;
-    background: #eef3f9;
-    padding: 6px 12px;
-    margin: 4px;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-
-  .project {
-    border: 1px solid #e5e7eb;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-  }
-
-  a.button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 16px;
-    background: #0a66c2;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-
-  footer {
-    margin-top: 50px;
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="header">
-      <div class="header-left">
-        <h1>Elena Yudina</h1>
-        <div class="subtitle">Desarrolladora Web Junior · Marbella, España</div>
-      </div>
-
-      <div class="header-right">
-        <a class="lang" href="index.html">EN</a>
-        <p>
-          <strong>Email:</strong> lena.ydina@gmail.com<br>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/lena050177" target="_blank">github.com/lena050177</a>
-        </p>
-      </div>
+  <header class="header">
+    <div class="header-left">
+      <h1>Elena Yudina</h1>
+      <p class="subtitle">Desarrolladora Web Junior · Marbella, España</p>
     </div>
 
-    <div class="section">
+    <div class="header-right">
+
+      <a class="lang-btn" href="index.html">EN</a>
+
+      <div class="social-links">
+        <a href="mailto:lena.ydina@gmail.com">
+          <img src="icons/email.svg" alt="Email">
+        </a>
+
+        <a href="https://www.linkedin.com/in/elena-yudina-055688b3/" target="_blank">
+          <img src="icons/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://github.com/lena050177" target="_blank">
+          <img src="icons/github.svg" alt="GitHub">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <!-- PERFIL -->
+    <section>
       <h2>Perfil</h2>
       <p>
         Desarrolladora Web Junior con experiencia previa en administración y atención al cliente.
-        Enfocada en la creación de sitios web reales con WordPress y tecnologías web.
-        Responsable, metódica y con alta motivación para crecer en el sector IT.
+        Enfocada en la creación de sitios web reales utilizando WordPress y tecnologías web.
+        Responsable, detallista y altamente motivada para crecer en el sector IT.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+
+    <!-- HABILIDADES -->
+    <section>
       <h2>Habilidades</h2>
       <div class="skills">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>PHP</span><span>WordPress</span><span>MySQL</span>
-        <span>GitHub</span><span>Diseño Responsive</span><span>Sitios Multilingües</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>WordPress</span>
+        <span>MySQL</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
+        <span>Sitios Multilingües</span>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Proyectos</h2>
 
-      <div class="project">
-        <h3>Sitio Corporativo en WordPress (Cliente real)</h3>
+    <!-- PROYECTO -->
+    <section>
+      <h2>Proyecto</h2>
+
+      <div class="project-card">
+        <h3>Sitio Web Corporativo con Integración CRM</h3>
+
         <p>
-          Sitio web corporativo multilingüe con diseño responsive, formulario de contacto,
-          estilo visual personalizado e integración básica de CRM para gestión de contactos.
-          Desarrollado y publicado en hosting real.
+          Desarrollo de un sitio web corporativo real en WordPress, incluyendo
+          diseño responsive, estructura multilingüe, configuración de formulario
+          de contacto e integración básica de CRM para la gestión de consultas de clientes.
         </p>
 
-        <a class="button" href="PUT_YOUR_LIVE_LINK_HERE" target="_blank">Ver sitio</a>
-        <a class="button" href="https://github.com/lena050177" target="_blank">GitHub</a>
+        <p>
+          El proyecto fue publicado en hosting real y demuestra habilidades prácticas
+          en desarrollo web real, estructura de interfaz y flujo de comunicación con clientes.
+        </p>
+
+        <div class="project-links">
+          <a class="btn btn-outline" href="https://tiptoptapiceria.online" target="_blank">
+            Ver sitio web
+          </a>
+
+          <a class="btn btn-outline" href="https://github.com/lena050177" target="_blank">
+            Ver repositorio
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Educación</h2>
+
+    <!-- CONTACTO -->
+    <section class="contact">
+      <h2>Contacto</h2>
+
       <p>
-        Curso Superior de Desarrollo Web (975h)<br>
-        Licenciatura en Ciencias Económicas
+        Actualmente busco mi primera oportunidad como Desarrolladora Web Junior.
+        Disponible para trabajo remoto o presencial en España.
       </p>
-    </div>
 
-    <div class="section">
-      <h2>Idiomas</h2>
-      <p>Español — Alto · Inglés — Alto · Ruso — Nativo</p>
-    </div>
+      <div class="contact-buttons">
+        <a class="btn" href="mailto:lena.ydina@gmail.com">Enviar email</a>
 
-    <footer>
-      © 2026 Elena Yudina
-    </footer>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/elena-yudina-055688b3/" target="_blank">
+          LinkedIn
+        </a>
 
-  </div>
+        <a class="btn btn-outline" href="https://wa.me/34666256908" target="_blank">
+          WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+<!-- BOTÓN WHATSAPP FIJO -->
+  <a href="https://wa.me/34666256908" class="whatsapp" target="_blank">
+    <img src="icons/whatsapp.svg" alt="WhatsApp">
+  </a>
+
 </body>
 </html>
+
