@@ -34,23 +34,37 @@ body {
 }
 
 
-/* ES BUTTON */
+/* LANG BUTTON */
+
+/* Language switch */
+
+.lang-switch {
+  display: flex;
+  gap: 6px;
+}
 
 .lang-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.lang-btn:hover {
+  background: #e7f0fb;
+}
+
+/* ACTIVE LANGUAGE */
+.lang-btn.active {
   background: #0a66c2;
   color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  transition:  0.2s ease;
+  border-color: #0a66c2;
 }
-
-.lang-btn:hover {
-  background: #084c97;
-}
-
 
 /* SOCIAL ICONS */
 
